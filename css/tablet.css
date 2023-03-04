@@ -1,0 +1,82 @@
+@media screen and (min-width:768px) {
+    .container{
+     max-width: 766px;
+    }
+    .team-section > .container{
+      max-width: 582px;
+    }
+    .customers > .container{
+      max-width: 582px;
+    }
+  
+    
+    /* ------------------MAIN--------------------- */
+    .main-section {
+        background-color: var(--main-color-title);
+        background-image: var(--linear-gradient), url(../images/hero-bg-tab.jpg);
+        max-width: 1440px;
+        margin: 0 auto;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+      
+        padding-top: 188px;
+        padding-bottom: 188px;
+      }
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        .main-section {
+          background-image: var(--linear-gradient), url(../images/hero-bg-tab-2x.jpg);
+        }
+      }
+
+
+    /* ---------------------TECHNOLOGIES---------------------- */
+    .technologies-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 24px;
+    }
+  
+    
+    .technologies-items {
+      width: calc((100% - 24px) / 2 );
+      margin-bottom: 72px;
+    }
+  
+    .subtitle {
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 1.11;
+      letter-spacing: 0.02em;
+      color: var(--main-color-title);
+      
+    }
+    .subtitle{
+     max-width: 0px;
+    }
+    
+    
+    .team-items{
+      width: calc((100% - 24px) / 2 );
+    }
+  
+  
+    .customers-item {
+      width: calc((100% - 48px) / 3);
+      height: 88px;
+    }
+  
+  }
+
+  
+  
+  
+  
+  @media screen and (max-width:767px) {
+    .team-section > .container{
+        max-width: 294px;
+      }
+    
+}
