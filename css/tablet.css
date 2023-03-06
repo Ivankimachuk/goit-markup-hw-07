@@ -67,7 +67,10 @@
     .header-address-link:is(:hover, :focus) {
       color: var(--adress-link-color);
     }
-  
+    
+    .menu-open{
+      display: none;
+    }
     
     /* ------------------MAIN--------------------- */
     .main-section {
