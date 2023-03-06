@@ -31,6 +31,19 @@
       }
     }
 
+    .main-title {
+      margin-right: auto;
+      margin-left: auto;
+      max-width: 526px;
+      margin-bottom: 40px;
+    
+      font-weight: 700;
+      text-align: center;
+      font-size: 56px;
+      line-height: 1.07;
+      letter-spacing: 0.02em;
+      color: var(--bg-white-color);
+    }
     
     /* ---------------------TECHNOLOGIES---------------------- */
     .technologies-section {
@@ -86,6 +99,7 @@
       padding-bottom: 120px;
     }
     .doing-subtitle {
+      display: block;
       text-align: center;
       text-transform: capitalize;
       font-size: 36px;
@@ -110,7 +124,7 @@
     .doing-images {
     }
 
-
+/*---------------------------TEAM----------------------- */
     .team-section {
       background-color: var(--ashen-color);
       padding-top: 120px;
@@ -120,6 +134,8 @@
       width: calc((100% - 72px) / 4);
     }
   
+
+    /* -----------------------CUSTOMERS LIST------------------- */
     .customers {
       padding-top: 120px;
       padding-bottom: 120px;
