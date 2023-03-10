@@ -57,6 +57,9 @@
 
     
     
+    .header-address {
+      display: block;
+    }
     .header-address-list {
       display: block;
       gap: 40px;
@@ -64,7 +67,6 @@
     
     .header-address-link {
       display: block;
-      padding-top: 16px;
       
     
       font-size: 12px;
@@ -82,6 +84,11 @@
       color: var(--adress-link-color);
     }
     
+    .header-address-item:not(:last-child) {
+      margin-top: 16px;
+      margin-bottom: 12px;
+    }
+    
     .menu-open{
       display: none;
     }
@@ -89,7 +96,7 @@
     /* ------------------MAIN--------------------- */
     .main-section {
         background-color: var(--main-color-title);
-        background-image: var(--linear-gradient), url(../images/hero-bg-tab.jpg);
+        background-image: var(--linear-gradient), url(../images/hero-bg.jpg);
         max-width: 1440px;
         margin: 0 auto;
         background-repeat: no-repeat;
@@ -103,7 +110,7 @@
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
         .main-section {
-          background-image: var(--linear-gradient), url(../images/hero-bg-tab-2x.jpg);
+          background-image: var(--linear-gradient), url(../images/hero-bg-2x.jpg);
         }
       }
 
@@ -123,23 +130,26 @@
     .technologies-list {
       display: flex;
       flex-wrap: wrap;
-      gap: 24px;
+      gap: 72px 24px;
     }
   
     
     .technologies-items {
       width: calc((100% - 24px) / 2 );
-      margin-bottom: 72px;
     }
   
     
-    .subtitle{
-     max-width: 0px;
+    .technologies-subtitle {
+      text-align: left;
     }
     
     /*---------------------------TEAM----------------------- */
     .team-items{
       width: calc((100% - 24px) / 2 );
+    }
+    .team-list {
+      display: flex;
+      gap: 64px 24px;
     }
   
   /* -----------------------CUSTOMERS LIST------------------- */
@@ -147,11 +157,18 @@
       width: calc((100% - 48px) / 3);
       height: 88px;
     }
+    .customers-list {
+      gap: 72px 16px;
+      
+    }
      /* --------------------------BACKDROB--------------------------- */
-  
+  .backdrob {
+    overflow-y: auto;
+  }
   .modal {
     width: 408px;
-    
+    top: 96px;
+    transform: translate(-50%, 0) scale(1);
   }
 
 
@@ -170,6 +187,7 @@
 }
 .footer-logo-container{
   text-align: left;
+  margin-bottom: 72px;
 }
 
 
@@ -177,7 +195,6 @@
 
 .footer-text {
   max-width: 264px;
-  margin-bottom: 72;
   text-align: left;
 
 }
@@ -210,6 +227,7 @@
 
 .subscribe-input{
   width: 264px;
+  margin-bottom: 0px;
 
 }
 

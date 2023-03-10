@@ -1,36 +1,38 @@
-@media screen and (min-width:480px) {
-    .container{
-     max-width: 426px;
-    }
-    
-  }
+
 
 
   @media screen and (max-width:385px) {
     .mob-tel{
       font-weight: 700;
-      font-size: 30px;
+      font-size: 28px;
       line-height: 1,11;
+    }
+
+    .mob-soc-list {
+      gap: 40px;
+    }
+    
+  }
+  @media screen and (min-width:428px) {
+    .main-section{
+      background-image: var(--linear-gradient), url(../images/hero-bg-tab.jpg);
+    }
+    @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .main-section {
+    background-image: var(--linear-gradient), url(../images/hero-bg-tab-2x.jpg);
+  }
+}
+    
+  }
+ 
+    
       
-    }
+  
+ 
+  
     
-  }
-  @media screen and (max-width:392px) {
-    .modal {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%) scale(0.9);
-      width: calc(100% - 30px);
-      min-height: 576px;
-      background-color: #fcfcfc;
-      border-radius: 4px;
-      padding: 24px;
-      box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
-        0px 2px 1px rgba(0, 0, 0, 0.2);
-      transition: transform 250ms linear;
-    }
-    
-  }
+  
  
   

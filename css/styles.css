@@ -37,6 +37,7 @@ body {
 
 .container {
   width: 100%;
+  max-width: 426px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
@@ -102,11 +103,10 @@ body {
 
 .header-address {
   font-style: normal;
-}
-
-.header-address-list{
   display: none;
 }
+
+
 
 /* MOBIL-MENU */
 .menu-open{
@@ -115,7 +115,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-left: auto;
   padding: 0;
   cursor: pointer;
   
@@ -162,13 +161,7 @@ body {
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   overflow-y: auto;
-}
-
-.mob-menu-list {
-  margin-bottom: 20px;
-
 }
 
 .mob-menu-item:not(:last-child) {
@@ -182,6 +175,9 @@ body {
   color: var(--main-color-title);
   cursor: pointer;
 }
+.current-page{
+  color: var(--adress-link-color);
+}
 .mob-menu-link:is(:hover, :focus) {
   color: var(--adress-link-color);
 }
@@ -190,10 +186,11 @@ body {
 
 
 
-
-.mob-menu-address-list {
+.mobile-adr{
+  margin-top: auto;
   margin-bottom: 48px;
 }
+
 .mob-menu-address-item:not(:last-child) {
   
     margin-bottom: 40px;
@@ -215,7 +212,7 @@ body {
   font-size: 36px;
   line-height: 1,11;
   letter-spacing: 0.02em;
-  color: var(--main-color-text);
+  color: var(--logo-color-braun);
 }
 
  /* MOB-SOC  */
@@ -399,7 +396,7 @@ body {
 
 .team-list {
   display: flex;
-  gap: 24px;
+  gap: 72px;
   flex-wrap: wrap;
 }
 
@@ -474,7 +471,7 @@ body {
   padding-bottom: 96px;
 }
 .customers-subtitle {
-  padding-bottom: 72px;
+  margin-bottom: 72px;
 
   font-size: 36px;
   line-height: 1.11;
@@ -484,7 +481,7 @@ body {
 }
 .customers-list {
   display: flex;
-  gap: 16px;
+  gap: 72px 16px;
   flex-wrap: wrap;
 }
 .customers-item {
@@ -529,6 +526,7 @@ body {
 }
 .footer-logo-container{
   text-align: center;
+  margin-bottom: 72px;
 }
 
 .footer-link {
@@ -554,11 +552,11 @@ body {
   color: var(--logo-color-braun);
 }
 .footer-text {
-  min-width: 268px;
+  max-width: 268px;
+  margin: 0 auto;
   color: var(--gray-color);
   margin-top: 16px;
-  margin-bottom: 72px;
-  text-align: center;
+  text-align: left;
 }
 
 /* ----------------------FOOTER SOCIAL MEDIA----------------------------- */
@@ -742,7 +740,7 @@ body {
 .types-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 48px c;
+  gap: 48px ;
 }
 
 .types-link:hover .types-cover-text {
@@ -836,8 +834,9 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%) scale(0.9);
-  width: 392px;
+  transform: translate(-50%, -50%) scale(1);
+  max-width: 392px;
+  width: calc(100% - 30px);
   min-height: 576px;
   background-color: #fcfcfc;
   border-radius: 4px;
@@ -993,6 +992,7 @@ body {
   }
 .check-text::before {
   content: "";
+  flex-shrink: 0;
   width: 16px;
   height: 16px;
   border: 1.25px solid var(--main-color-title);
