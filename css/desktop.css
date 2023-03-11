@@ -143,6 +143,7 @@
     }
     .technologies-items {
       width: calc((100% - 72px) / 4 );
+      margin-bottom: 0px;
     }
     .technologies-items::before {
       content: "";

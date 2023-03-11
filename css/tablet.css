@@ -11,6 +11,7 @@
 
 
 /* --------------------HEADER ---------------------*/
+
     .header-list {
       display: flex;
       gap: 40px;
@@ -59,6 +60,7 @@
     
     .header-address {
       display: block;
+      
     }
     .header-address-list {
       display: block;
@@ -136,6 +138,7 @@
     
     .technologies-items {
       width: calc((100% - 24px) / 2 );
+      margin-bottom: 0px;
     }
   
     
